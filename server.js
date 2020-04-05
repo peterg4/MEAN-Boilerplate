@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // connect to db
-mongoose
+/*mongoose
   .connect(process.env.MONGO_URI, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
@@ -17,7 +17,7 @@ mongoose
   .catch(err => {
     console.log('\nDB Connection Error: ${err.message}');
   });
-
+*/
 app.use(express.static('public'));
 
 app.get('/', function(req, res){
