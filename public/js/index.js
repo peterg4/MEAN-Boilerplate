@@ -1,3 +1,5 @@
+var app = angular.module("myApp", []);
+
 app.controller("mainController", ['$scope','$http','$sce', function($scope, $http, $sce) {
   $scope.view = 0;
   $scope.currid = "home";
